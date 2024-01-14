@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recopilatorio del Año</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="components">
+        <p>Summary Art Generator</p>
+    </header>
+
+    <main id="main">
+        <div id="finalCanvas">
+            <h1 id="header" class="heading underline"></h1>
+            <div class="container">
+                <div class="grid-gallery" id="gridContainer"></div>
+            </div>
+        </div>
+        
+        <div class="input-container" id="inputBtn">
+            <label for="fileInput" class="button">Subir archivos</label>
+            <input class="inputfile" type="file" id="fileInput" multiple>
+            <button id="downloadButton" class="button" style="display: none;">Descargar</button>
+        </div>
+    </main>
+
+    <div class="newtons-cradle hidden" id="loader">
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+    </div>
+
+    <footer class="components">Creador por Feith Noir</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
